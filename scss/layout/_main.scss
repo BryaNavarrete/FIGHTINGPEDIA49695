@@ -1,0 +1,101 @@
+.fondo{
+    background-image: url("../assets/img/index.webp") ;
+    height: 31.25rem;
+    background-repeat: no-repeat;
+    background-size: cover;
+    color: map-get($colores, Color5);
+    @include flex(column, center, center, 0px);
+}
+
+
+main {
+    background-image: linear-gradient(to bottom, #000000, #280c12, #480a16, #670513, #850505);
+}  
+
+h1{
+    text-align: center;
+    padding: 20px;
+    font-family: 'Kanit', sans-serif;
+    text-shadow: 2px 2px 2px black;
+    letter-spacing: 5px;
+    color: map-get($colores, Color3);
+}
+
+h3{
+    font-family: 'Kanit', sans-serif;
+    text-shadow: 2px 2px 2px black;   
+}
+
+.personaje-del-dia{
+    color: map-get($colores, Color1);
+    text-align: center;
+}
+
+.personaje-del-dia img{
+    width: 18.75rem;
+    height: 18.75rem;
+    padding: 20px;
+} 
+
+.personaje-del-dia img p{
+    color: map-get($colores, Color1);
+    font-size: 20px;
+}
+
+.fondo-street{
+    background-image: url("../assets/img/street-fight.jpg") ;
+    height: 31.25rem;
+    background-repeat: no-repeat;
+    background-size: cover;
+    @include flex(column, center, center, 0px);
+}   h2{
+    -webkit-animation: text-focus-in 1.5s cubic-bezier(0.550, 0.085, 0.680, 0.530) both;
+    animation: text-focus-in 1.5s cubic-bezier(0.550, 0.085, 0.680, 0.530) both;
+}
+
+@-webkit-keyframes text-focus-in {
+0% {
+-webkit-filter: blur(12px);
+      filter: blur(12px);
+opacity: 0;
+}
+100% {
+-webkit-filter: blur(0px);
+      filter: blur(0px);
+opacity: 1;
+}
+}
+@keyframes text-focus-in {
+0% {
+-webkit-filter: blur(12px);
+      filter: blur(12px);
+opacity: 0;
+}
+100% {
+-webkit-filter: blur(0px);
+      filter: blur(0px);
+opacity: 1;
+}
+}
+
+
+.fondo-mortal{
+    @extend .fondo-street;
+    background-image: url("../assets/img/Mortal-Kombat-1.webp") ;
+
+}
+
+.fondo-kof{
+    @extend .fondo-street;
+    background-image: url("../assets/img/the-king-of-fighters-dc9a429a.png") ;
+}
+
+.fondo-tekken{
+    @extend .fondo-street;
+    background-image: url("../assets/img/maxresdefault.jpg") ;
+}
+
+.titulo-street{
+    text-align: center;
+    color: whitesmoke;
+}
